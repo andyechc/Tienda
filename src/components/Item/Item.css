@@ -1,4 +1,4 @@
-.item{
+.item {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -10,23 +10,48 @@
     box-shadow: 0 0 20px -10px #000;
 }
 
-.item-img{
+.item-img {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
     display: block;
+    font-size: 16px;
+    text-align: center;
+    background: #ececec;
+    color: #fff3;
 }
 
-.item-details{
-    padding: 20px;
+.item-details {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 20px;
 }
-.item-details h3{
+
+.item-details h3 {
     font-size: 25px;
 }
-.item-details p{
+
+.item-details p {
     font-size: 18px;
     font-weight: 600;
+    color: #fff6;
+}
+
+.item-buttons {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.item-buttons button{
+    background: transparent;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
