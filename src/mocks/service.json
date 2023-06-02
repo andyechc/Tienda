@@ -1,0 +1,101 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Zapatillas deportivas",
+        "details": "Zapatillas de running para hombre",
+        "category": "Calzado",
+        "price": 129.99,
+        "src": "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltJTIwc2hvZXN8ZW58MHx8MHx8&w=1000&q=80"
+      },
+      {
+        "id": 2,
+        "name": "Camiseta estampada",
+        "details": "Camiseta de algodón con estampado",
+        "category": "Ropa",
+        "price": 39.90,
+        "src": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8&w=1000&q=80"
+      },
+      {
+        "id": 3,
+        "name": "Pantalones vaqueros",
+        "details": "Pantalones de mezclilla para mujer",
+        "category": "Ropa",
+        "price": 79.95,
+        "src": "https://down-mx.img.susercontent.com/file/83a41a2c458e08ac408810209832396c_tn"
+      },
+      {
+        "id": 4,
+        "name": "Gorra de béisbol",
+        "details": "Gorra ajustable de algodón",
+        "category": "Accesorios",
+        "price": 19.99,
+        "src": "https://images-na.ssl-images-amazon.com/images/I/81+np5paOzL._AC_UL330_SR330,330_.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Cinturón de cuero",
+        "details": "Cinturón de cuero genuino para hombre",
+        "category": "Accesorios",
+        "price": 49.95,
+        "src": "https://latiendadelcuero.com/wp-content/uploads/2019/11/1832-Cinturon-cuero-puntos.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Bolso de hombro",
+        "details": "Bolso de cuero para mujer",
+        "category": "Accesorios",
+        "price": 149.99,
+        "src": "https://media.istockphoto.com/id/623536474/es/foto/elegantes-mujeres-beige-bolso-vista-trasera.webp?b=1&s=170667a&w=0&k=20&c=6ZCkkZAATxehLSdVz0oxIjVyAb3zuYCq7ADVa9tFYFc="
+      },
+      {
+        "id": 7,
+        "name": "Reloj de pulsera",
+        "details": "Reloj de acero inoxidable con correa de cuero",
+        "category": "Relojes",
+        "price": 299.00,
+        "src": "https://media.istockphoto.com/id/1180244659/es/foto/reloj-de-lujo-aislado-sobre-fondo-blanco-con-trazado-de-recorte-para-ilustraciones-o-dise%C3%B1o.webp?b=1&s=170667a&w=0&k=20&c=SlHr0a5OL3ZmidwGhrcs3bSCG1t6r93pA0CUgT4qOic="
+      },
+      {
+        "id": 8,
+        "name": "Perfume masculino",
+        "details": "Fragancia fresca y amaderada para hombre",
+        "category": "Perfumes",
+        "price": 89.90,
+        "src": "https://images.unsplash.com/photo-1458538977777-0549b2370168?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlcmZ1bWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
+      },
+      {
+        "id": 9,
+        "name": "Perfume femenino",
+        "details": "Fragancia floral y frutal para mujer",
+        "category": "Perfumes",
+        "price": 99.95,
+        "src": "https://media.istockphoto.com/id/1449079882/es/foto/mano-femenina-negra-mostrando-el-frasco-de-perfume-cl%C3%A1sico.webp?b=1&s=170667a&w=0&k=20&c=ZMKXVKs1rCVZCpquxrB9-RP0GeBIG3PQf4i4BT2Jdnc="
+      },
+      {
+        "id": 10,
+        "name": "Maletín de cuero",
+        "details": "Maletín de cuero para portátil de 15 pulgadas",
+        "category": "Accesorios",
+        "price": 249.99,
+        "src": "https://media.istockphoto.com/id/133573735/es/foto/marr%C3%B3n-maleta-retro-horizontal.webp?b=1&s=170667a&w=0&k=20&c=Wlzl8NGsX9BjZvSMYovEISNOluKhEDGIANueTZz87W0="
+      },
+      {
+        "id": 11,
+        "name": "Jersey de lana",
+        "details": "Jersey de lana merino para hombre",
+        "category": "Ropa",
+        "price": 129.00,
+        "src": "https://media.istockphoto.com/id/1340959863/es/foto/su%C3%A9ter-azul-aislado-en-blanco-su%C3%A9ter-de-punto-vintage-casual-c%C3%A1rdigan-de-lana-vista-superior.webp?b=1&s=170667a&w=0&k=20&c=zZAv5lBSPGGkafrvW7RAwJW65ugmWKSKRHWoTHoHNic="
+      },
+      {
+        "id": 12,
+        "name": "Chaqueta de cuero",
+        "details": "Chaqueta de cuero genuino para mujer",
+        "category": "Ropa",
+        "price": 299.00,
+        "src": "https://media.istockphoto.com/id/1022144962/es/foto/moda-mujer-joven-con-chaqueta-de-cuero-bikers.webp?b=1&s=170667a&w=0&k=20&c=NxOqg9UzwB8bHUF1RsBA4iMrkigEr3Re9VpBJCVfTKc="
+      }
+    ]
+}
+      

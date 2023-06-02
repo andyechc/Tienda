@@ -1,0 +1,15 @@
+.header{
+    width: 100vw;
+    height: 80px;
+    background: #0007;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+}
