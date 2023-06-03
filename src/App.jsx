@@ -3,6 +3,8 @@ import './App.css'
 import { products as serviceProducts } from './mocks/products.json'
 import { Products } from './components/Products/Products.jsx'
 import { Header } from './components/Header/Header'
+import { Filters } from './components/Filters/Filters'
+import { Footer } from './components/Footer/Footer'
 
 export default function App() {
   const [products] = useState(serviceProducts)
@@ -28,7 +30,10 @@ export default function App() {
   return (
     <div className='App'>
       <Header />
-      <Products products={filteredProducts} />
+      <Products products={filteredProducts}>
+        <Filters changeFilters={setFilters}/>
+      </Products>
+      <Footer />
     </div>
   )
 }

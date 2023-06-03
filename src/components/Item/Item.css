@@ -1,5 +1,5 @@
 .item {
-    width: 100%;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,6 @@
     align-items: center;
     word-wrap: break-word;
     font-weight: 600;
-    transition: all ease;
     animation: img-loading 700ms infinite alternate;
 }
 

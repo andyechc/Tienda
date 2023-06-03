@@ -2,11 +2,14 @@
     width: 100%;
     height: 100%;
     padding: 20px;
-    margin-top: 80px;
 }
 
-.products-title{
-    font-size: 3em;
+.products-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 2em;
     padding: 20px 0;
     margin-bottom: 2em;
     border-bottom: 1px solid #666 ;

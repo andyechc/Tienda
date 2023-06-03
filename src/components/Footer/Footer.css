@@ -1,0 +1,26 @@
+.Footer{
+    position: static;
+    border-top: 1px solid #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90px;
+    width: 100%;
+    padding: 50px 0;
+    color: #aaa;
+    gap: 10px
+}
+
+.Footer i{
+    color: #911
+}
+.Footer a{
+    margin-left: 7px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Footer p{
+    opacity: .6;
+}

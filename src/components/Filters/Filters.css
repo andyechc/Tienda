@@ -1,0 +1,43 @@
+.filters{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.filters-price{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+.filters-price-range{
+    max-width: 200px;
+}
+
+.filters-category{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+.filters-category-select{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #666;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.filters-category-select option{
+    background: #222;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}

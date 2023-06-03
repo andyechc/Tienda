@@ -1,10 +1,8 @@
 import './Item.css'
 
-export function Item({product, key}) {
-    
-  console.log('se renderiza:')
+export function Item({product}) {
     return (
-        <li className='item' key={key}>
+        <li className='item'>
             <img className='item-img' src={product.src} alt={product.details} />
             <div className='item-details'>
                 <h3>{product.name}</h3>
