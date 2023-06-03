@@ -15,10 +15,26 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
-    background: #ececec;
-    color: #fff3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    font-weight: 600;
+    transition: all ease;
+    animation: img-loading 700ms infinite alternate;
+}
+
+@keyframes img-loading{
+    from{
+        background: #ececec;
+        color: #555
+    }
+    to{
+        color: #ececec;
+        background: #555
+    }
 }
 
 .item-details {

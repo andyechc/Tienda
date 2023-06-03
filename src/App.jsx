@@ -1,18 +1,34 @@
 import { useState } from 'react'
-
 import './App.css'
-
-import service from './mocks/service.json'
-
+import { products as serviceProducts } from './mocks/products.json'
 import { Products } from './components/Products/Products.jsx'
 import { Header } from './components/Header/Header'
 
 export default function App() {
+  const [products] = useState(serviceProducts)
+  const [filters, setFilters] = useState({
+    category: 'All',
+    minPrice: 0
+  })
+
+  const filterProducts = (products) => {
+    return products.filter(product => {
+      return (
+        product.price >= filters.minPrice &&
+        (
+          filters.category === 'All' ||
+          product.category === filters.category
+        )
+      )
+    })
+  }
+
+  const filteredProducts = filterProducts(products)
 
   return (
     <div className='App'>
       <Header />
-      <Products products={service.products} />
+      <Products products={filteredProducts} />
     </div>
   )
 }

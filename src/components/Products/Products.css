@@ -8,16 +8,16 @@
 .products-title{
     font-size: 3em;
     padding: 20px 0;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
     border-bottom: 1px solid #666 ;
 }
 
 .products-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    width: 100%;
+    max-width: 1200px;
     height: 100%;
-    gap: 20px;
+    gap: 2.5em;
     list-style: none;
-    display: grid;
+    margin: auto;
 }

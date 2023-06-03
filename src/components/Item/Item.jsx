@@ -1,10 +1,11 @@
-import { lazy } from 'react'
 import './Item.css'
 
 export function Item({product, key}) {
+    
+  console.log('se renderiza:')
     return (
         <li className='item' key={key}>
-            <img className='item-img' src={product.src} onLoad={lazy} alt={product.details} />
+            <img className='item-img' src={product.src} alt={product.details} />
             <div className='item-details'>
                 <h3>{product.name}</h3>
                 <p>{product.details}</p>
