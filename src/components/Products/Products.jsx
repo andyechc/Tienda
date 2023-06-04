@@ -1,13 +1,14 @@
+import { Filters } from '../Filters/Filters'
 import { GoUp } from '../GoUp/GoUp'
 import { Item } from '../Item/Item'
 import './Products.css'
 
-export function Products({ products, children }) {
+export function Products({ products }) {
   return (
     <main className="products">
       <div className='products-header'>
         <h2>Productos</h2>
-        {children}
+        <Filters />
       </div>
       <ul className='products-list'>
         {

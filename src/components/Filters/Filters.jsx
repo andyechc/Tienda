@@ -1,20 +1,20 @@
-import { useState } from 'react'
 import './Filters.css'
+import { useFilters } from '../../hooks/useFilters'
+import { useId } from 'react'
 
-export function Filters({changeFilters}) {
-    const [minPrice, setMinPrice] = useState(0)
-    const [category, setCategory] = useState('All')
+export function Filters() {
+    const { filters, setFilters } = useFilters()
+    const minPriceFilterId = useId()
+    const categoryFilterId = useId()
 
     const handlePriceChange = (e) => {
-        setMinPrice(e.target.value)
-        changeFilters(prevState => ({
+        setFilters(prevState => ({
             ...prevState,
             minPrice: e.target.value
         }))
     }
     const handleCategoryChange = (e) => {
-        setCategory(e.target.value)
-        changeFilters(prevState => ({
+        setFilters(prevState => ({
             ...prevState,
             category: e.target.value
         }))
@@ -23,24 +23,23 @@ export function Filters({changeFilters}) {
     return (
         <section className='filters'>
             <div className='filters-price'>
-                <label htmlFor="price">Precio Mínimo</label>
+                <label htmlFor={minPriceFilterId}>Precio Mínimo</label>
                 <input
                     className='filters-price-range'
                     type="range"
-                    value={minPrice}
+                    value={filters.minPrice}
                     min={0}
                     max={300}
-                    id='price'
+                    id={minPriceFilterId}
                     onChange={handlePriceChange}
                 />
-                <span>${minPrice}</span>
+                <span>${filters.minPrice}</span>
             </div>
             <div className='filters-category'>
-                <label htmlFor="category">Categorias</label>
-                <select 
-                    className='filters-category-select' 
-                    id="category"
-                    value={category}
+                <label htmlFor={categoryFilterId}>Categorias</label>
+                <select
+                    className='filters-category-select'
+                    id={categoryFilterId}
                     onChange={handleCategoryChange}
                 >
                     <option value="All">Todas</option>
