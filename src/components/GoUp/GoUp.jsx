@@ -4,7 +4,7 @@ export function GoUp() {
     return (
         <>
             <button className="GoUp">
-                <a href="#price"><i className='fa-solid fa-arrow-up'></i></a>
+                <a href="#products"><i className='fa-solid fa-arrow-up'></i></a>
             </button>
         </>
     )

@@ -1,9 +1,13 @@
+import { Cart } from '../Cart/Cart'
 import './Header.css'
 
 export function Header() {
     return (
         <header className="header">
-            <h1>Tienda <i className='fa-solid fa-shopping-cart'></i></h1>
+            <div className='header-logo-nav'>
+                <h1>Tienda</h1>
+                <Cart />
+            </div>
         </header>
     )
 }

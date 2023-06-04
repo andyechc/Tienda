@@ -5,7 +5,7 @@ import './Products.css'
 
 export function Products({ products }) {
   return (
-    <main className="products">
+    <main className="products" id='products'>
       <div className='products-header'>
         <h2>Productos</h2>
         <Filters />
