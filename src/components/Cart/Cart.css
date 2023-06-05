@@ -26,9 +26,7 @@
     background: #000;
     display: none;
     padding: 30px;
-    flex-direction: column;
     position: fixed;
-    align-items: center;
     gap: 40px;
     right: 0;
     top: 0;
@@ -60,7 +58,7 @@
 }
 
 .cart-button~input:checked~.cart {
-    display: flex;
+    display: grid;
 }
 
 .brush{
@@ -77,4 +75,5 @@
     color: #f00;
     background: #222;
     font-size: 20px;
+    margin: auto;
 }
