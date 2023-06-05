@@ -26,7 +26,10 @@
     background: #000;
     display: none;
     padding: 30px;
+    flex-direction: column;
     position: fixed;
+    align-items: center;
+    gap: 40px;
     right: 0;
     top: 0;
     width: 270px;
@@ -37,7 +40,7 @@
     animation: showcart 500ms;
 }
 .cart h1{
-    padding: 30px 0;
+    border-bottom: 1px solid #666;
 }
 
 .cart-list{
@@ -57,5 +60,21 @@
 }
 
 .cart-button~input:checked~.cart {
-    display: block;
+    display: flex;
+}
+
+.brush{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    overflow: hidden;
+    border: 1px solid #f00;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #f00;
+    background: #222;
+    font-size: 20px;
 }

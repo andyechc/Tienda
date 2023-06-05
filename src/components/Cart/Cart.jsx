@@ -15,20 +15,29 @@ export function Cart() {
 
       <aside className='cart'>
         <h1>Cart </h1>
+
         <ul className='cart-list'>
-          {cart.map(product => (
-            <CartItem 
-              src={product.src}
-              key={product.id}
-              detail={product.detail}
-              title={product.name}
-              price={product.price}
-              quantity={product.quantity}
-              addCart={() => addCart(product)}
-            />
-          ))}
+          {
+            cart.length > 0
+              ? cart.map(product => (
+                <CartItem
+                  src={product.src}
+                  key={product.id}
+                  detail={product.detail}
+                  title={product.name}
+                  price={product.price}
+                  quantity={product.quantity}
+                  addCart={() => addCart(product)}
+                />
+              ))
+
+              : <span>No se hay productos en el carrito...</span>
+          }
         </ul>
-        <button onClick={clearCart}><i className='fa-solid fa-brush'></i></button>
+        {
+          cart.length > 0 &&
+            <button className='brush' onClick={clearCart}><i className='fa-solid fa-brush'></i></button>
+        }
       </aside>
     </>
   )
