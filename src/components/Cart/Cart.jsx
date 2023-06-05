@@ -4,8 +4,9 @@ import { useCart } from '../../hooks/useCart'
 import { CartItem } from '../CartItem/CartItem'
 
 export function Cart() {
-  const { cart, clearCart, addCart } = useCart()
+  const { cart, clearCart, addCart, restCart, checkIsMoreThanOne } = useCart()
   const cartCheckboxId = useId()
+
   return (
     <>
       <label className='cart-button' htmlFor={cartCheckboxId}>
@@ -28,6 +29,8 @@ export function Cart() {
                   price={product.price}
                   quantity={product.quantity}
                   addCart={() => addCart(product)}
+                  isMoreThanOne={checkIsMoreThanOne(product)}
+                  restCart={() => restCart(product)}
                 />
               ))
 
@@ -36,7 +39,7 @@ export function Cart() {
         </ul>
         {
           cart.length > 0 &&
-            <button className='brush' onClick={clearCart}><i className='fa-solid fa-brush'></i></button>
+          <button className='brush' onClick={clearCart}><i className='fa-solid fa-brush'></i></button>
         }
       </aside>
     </>

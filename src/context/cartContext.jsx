@@ -11,6 +11,7 @@ export function CartProvider({ children }) {
     if (productInCartIndex >= 0){
       const newCart = structuredClone(cart)
       newCart[productInCartIndex].quantity += 1
+      newCart[productInCartIndex].price += newCart[productInCartIndex].price
       return setCart(newCart)
     }
 
@@ -21,6 +22,17 @@ export function CartProvider({ children }) {
         quantity: 1
       }
     ]))
+  }
+
+  const restCart = product => {
+    const productInCartIndex = cart.findIndex(item => item.id === product.id)
+    
+    if (productInCartIndex >= 0){
+      const newCart = structuredClone(cart)
+      newCart[productInCartIndex].quantity -= 1
+      newCart[productInCartIndex].price -= newCart[productInCartIndex].price
+      return setCart(newCart)
+    }
   }
 
   const removeCart = product =>{
@@ -36,7 +48,8 @@ export function CartProvider({ children }) {
       cart,
       addCart,
       clearCart,
-      removeCart
+      removeCart,
+      restCart
     }}>
       {children}
     </CartContext.Provider>
