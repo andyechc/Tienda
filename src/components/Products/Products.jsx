@@ -12,15 +12,15 @@ export function Products({ products }) {
       </div>
       <ul className='products-list'>
         {
-          products.slice(0, 10).map(product => (
+          products.map(product => (
             <Item product={product} key={product.id} />
           ))
         }
-        {
-          products && 
-            <GoUp />
-        }
       </ul>
+      {
+        products &&
+        <GoUp />
+      }
     </main>
   )
 }

@@ -33,7 +33,7 @@
     height: 100vh;
     border: 1px solid #666;
     z-index: 9999;
-    animation: showcart 1s;
+    animation: showcart 500ms;
 }
 
 @keyframes showcart {

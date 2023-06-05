@@ -8,13 +8,14 @@
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 500;
     backdrop-filter: blur(20px);
 }
 .header-logo-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
+    width: 100%;
     margin: auto;
     height: 100%;
 }
