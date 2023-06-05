@@ -23,17 +23,25 @@
 }
 
 .cart {
-    background: #000c;
-    backdrop-filter: blur(20px);
+    background: #000;
     display: none;
     padding: 30px;
     position: fixed;
     right: 0;
     top: 0;
-    width: 250px;
+    width: 270px;
     height: 100vh;
     border: 1px solid #666;
     z-index: 9999;
+    animation: showcart 1s;
+}
+
+@keyframes showcart {
+    from{
+        right: -270px;
+    }to{
+        right: 0;
+    }
 }
 
 .cart-button ~ input:checked ~ .cart {
