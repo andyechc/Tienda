@@ -70,3 +70,9 @@
     border: none;
     cursor: pointer;
 }
+.item-buttons button .fa-shopping-cart{
+    color: #35f
+}
+.item-buttons button .fa-x{
+    color: #f00
+}

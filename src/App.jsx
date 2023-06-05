@@ -1,5 +1,3 @@
-import './App.css'
-
 import { products as serviceProducts } from './mocks/products.json'
 
 import { Products } from './components/Products/Products.jsx'
@@ -7,6 +5,7 @@ import { Header } from './components/Header/Header'
 import { Footer } from './components/Footer/Footer' 
 
 import { useFilters } from './hooks/useFilters'
+import { CartProvider } from './context/cartContext'
 
 
 export default function App() {
@@ -14,11 +13,11 @@ export default function App() {
   const filteredProducts = filterProducts(serviceProducts)
 
   return (
-    <div className='App'>
+    <CartProvider>
       <Header />
       <Products products={filteredProducts} />
       <Footer />
-    </div>
+    </CartProvider>
   )
 }
 
