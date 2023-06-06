@@ -24,9 +24,9 @@
 
 .cart {
     background: #000;
-    display: none;
     padding: 30px;
     position: fixed;
+    display: none;
     gap: 40px;
     right: 0;
     top: 0;
@@ -34,14 +34,15 @@
     height: 100vh;
     border: 1px solid #666;
     overflow-y: scroll;
-    z-index: 9999;
     animation: showcart 500ms;
+    z-index: 9999;
 }
-.cart h1{
+
+.cart h1 {
     border-bottom: 1px solid #666;
 }
 
-.cart-list{
+.cart-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -57,11 +58,12 @@
     }
 }
 
+
 .cart-button~input:checked~.cart {
     display: grid;
 }
 
-.brush{
+.brush {
     display: flex;
     justify-content: center;
     align-items: center;

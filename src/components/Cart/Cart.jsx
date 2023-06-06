@@ -1,4 +1,4 @@
-import { useId } from 'react'
+import { useId, useState } from 'react'
 import './Cart.css'
 import { useCart } from '../../hooks/useCart'
 import { CartItem } from '../CartItem/CartItem'
@@ -6,13 +6,22 @@ import { CartItem } from '../CartItem/CartItem'
 export function Cart() {
   const { cart, clearCart, addCart, restCart, checkIsMoreThanOne } = useCart()
   const cartCheckboxId = useId()
+  const [isHidden, setIsHidden] = useState(true)
+
+  const handleChange = ()=>{
+    setIsHidden(!isHidden)
+  }
+  const labelClassName = ()=>{
+    return isHidden ? 'fa-solid fa-shopping-cart' : 'fa-solid fa-arrow-right'
+  }
+ 
 
   return (
     <>
       <label className='cart-button' htmlFor={cartCheckboxId}>
-        <i className='fa-solid fa-shopping-cart'></i>
+        <i className={labelClassName()}></i>
       </label>
-      <input type="checkbox" id={cartCheckboxId} hidden />
+      <input onChange={handleChange} type="checkbox" id={cartCheckboxId} hidden />
 
       <aside className='cart'>
         <h1>Cart </h1>
@@ -34,7 +43,7 @@ export function Cart() {
                 />
               ))
 
-              : <span>No se hay productos en el carrito...</span>
+              : <span>No hay productos en el carrito...</span>
           }
         </ul>
         {

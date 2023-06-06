@@ -5,7 +5,7 @@ export function Header() {
     return (
         <header className="header">
             <div className='header-logo-nav'>
-                <h1>Tienda</h1>
+                <h1>Tienda <i className='fa-solid fa-shop'></i></h1>
                 <Cart />
             </div>
         </header>

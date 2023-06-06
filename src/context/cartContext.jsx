@@ -11,7 +11,6 @@ export function CartProvider({ children }) {
     if (productInCartIndex >= 0){
       const newCart = structuredClone(cart)
       newCart[productInCartIndex].quantity += 1
-      newCart[productInCartIndex].price += newCart[productInCartIndex].price
       return setCart(newCart)
     }
 
@@ -30,7 +29,6 @@ export function CartProvider({ children }) {
     if (productInCartIndex >= 0){
       const newCart = structuredClone(cart)
       newCart[productInCartIndex].quantity -= 1
-      newCart[productInCartIndex].price -= newCart[productInCartIndex].price
       return setCart(newCart)
     }
   }
